@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .wrapper {
+    min-height: 100vh;
+  }
+
+  /* ======== .global-msg ====== */
+  .global-msg {
+    background: rgb(46, 46, 53);
+    color: white;
+    padding: 25px 0;
+  }
+  .global-msg .msg{
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+
+  .latest-content button, .rec button{
+    background-color: rgb(225, 196, 248);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    float: right;
+    box-shadow: -5px 5px 10px 5px rgb(88, 94, 88);
+  }
+
+  .latest-content i, rec-content-i{
+    font-weight: bolder;
+    color: rgb(95, 23, 95);
+  }
+
+  .top-msg {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .icons i{
+      font-size: 30px;
+      font-weight: bolder;
+      margin-left: 10px;
+  }
+  .msg{
+      font-size: 20px;
+     
+  }
+
+  .header{
+      background-color: rgb(242, 213, 248);
+      display: flex;
+      justify-content: space-between;
+      height: 70px;
+      
+  }
+
+  .menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu i{
+    display:none;
+  }
+
+  .menu ul{
+      list-style-type: none;
+      display: flex;
+      /* to add gap, we can use gap r can use margine leff on each item. */
+      /* gap:40px; */
+  }
+
+  .menu ul li{
+      margin-left: 25px;
+      font-size: 18px;
+      letter-spacing: 2px;
+  }
+
+  .logo{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+  }
+  
+
+  /* ===============Hero=============== */
+.hero{
+  background:url(./assets/flowerField.jpg) no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  min-height: 100vh;
+}  
+  
+
+.hero-content{
+  background-color: rgb(70, 70, 66);
+  text-align: center;
+  opacity: 0.7;
+  width: 50%;
+  color:white;
+  height: 200px;
+  padding: 40px 30px;
+
+  
+}
+
+.hero-content h1{
+  font-size: 30px;
+  text-transform: uppercase;
+
+  
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+  
+.hero-content p{
+  font-size: 20px;
+
+}
+  
+.latest-content{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+  
+.latest{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  /* margin-top: 50px; */
+}
+
+h3{
+  /* margin-top: 50px!important; */
+  text-transform: uppercase;
+  font-size: 30px;
+  color:rgb(96, 20, 167);
+}
+
+.post-content{
+  margin-top:70px;
+}
+
+.post-content{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.post-content img{
+  width: 250px;
+  /* height: 300px; */
+  border-radius: 5px;
+  border:3px solid rgb(172, 155, 155);
+  box-shadow: -10px 10px 15px 5px rgb(28, 37, 28);
+
+}
+
+.info{
+  margin: 0 20px;
+}
+
+.info article{
+  padding-top: 10px;
+}
+
+
+/* date{ */
+  /* padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom:10px;
+  font-weight: bolder;
+  color: rgb(85, 9, 156); */
+/* } */
+
+
+
+.links{
+  /* background-color: rgba(rgb(124, 46, 46,0.3)); */
+  width: 40%;
+  padding: 32px 16px;
+  background-color: rgba(215, 145, 236, 0.6);
+  border-radius: 15px;
+}
+
+h4{
+  font-size: 20px;
+  color: rgb(96, 20, 167);
+  text-transform: uppercase;
+}
+
+button{
+  font-size: 10px;
+  /* height: 30px;
+  padding-bottom: 2px; */
+}
+
+button i span{
+  margin-left: 5px;
+  font-style: italic;
+}
+
+.rec{
+  margin-top: 100px;
+}
+
+.rec-content{
+  display: flex;
+  flex-direction: row;
+  /* padding-right:0; */
+  align-items: center;
+}
+
+
+.card{
+  background-color: rgb(240, 206, 247);
+  /* width:320px; */
+  width: 30%;
+  min-height:500px;
+  margin: 10px;
+  box-shadow: -5px 5px 10px 5px rgb(88, 94, 88);
+  border-radius: 15px;
+  /* padding-right:10px;
+  padding-left:10px; */
+}
+
+.card img{
+  width: 100%;  
+  min-height: 200px;
+  border-top-right-radius:15px;
+  border-top-left-radius:15px;
+}
+
+date i span{
+  font-weight: bolder;
+}
+
+
+.subscribe{
+  margin:64px auto;
+  background-color: rgb(85, 17, 117);
+  color: white;
+  text-align: center;
+  min-height: 150px;
+  border-radius: 15px;
+  margin-top:32px;
+  padding:25px;
+}
+
+.subscribe h4{
+  color:white;
+  padding-top:5px;
+  margin-top:5px;
+}
+
+input{
+  padding:10px;
+}
+
+[type = "submit"]{
+  background-color: rgb(230, 181, 235);
+  border-radius: 5px;
+  padding: 12px 25px;
+
+
+}
+.footer{
+  background-color: rgb(59, 57, 57);
+  padding: 40px 0;
+  color: rgb(218, 188, 247);
+  text-align: center;
+  
+}
+
+
+
+/*=========================Media Query=========================== */
+
+
+@media and (max-width:998px){
+
+}
+
+@media (max-width:768px){
+  .menu{
+    height: 62px;
+  }  
+
+  .menu ul{
+    display: none;
+    
+  }
+
+  .menu i{
+    display:block;
+  }
+
+  .hero-content{
+    width:80%;
+  }
+
+  
+  .hero-content h1{
+    font-size: 25px;
+  } 
+
+  .latest-content{
+    flex-direction: column;
+  }
+
+  .latest{
+    width: 100%;
+  }
+
+  .links{
+    width: 100%;
+    margin-top:40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+h4{
+  font-size: 14px;
+}
+
+.latest-content button, .rec button{
+  padding: 5px;
+}
+
+.latest-content button, .rec button{
+  margin:10px 2px;
+}
+
+.info{
+  margin:auto auto;
+  padding:5px 20px;
+}
+  
+.info article{
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+.rec-content{
+  flex-direction: column;
+}
+
+.card{
+  width: 90%;
+}
+  
+}
+
+
+
+@media (max-width : 480px){
+  .container{
+    width: 90%;
+  }
+
+  .hero-content h1{
+    font-size: 18px;
+  }
+
+  .post-content{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .post-content img{
+    width:100%;
+    margin: 30px 0;
+  }
+
+  .msg{
+    font-size: 10px;
+    margin-left: 3px;
+    padding-left:0;
+  }
+
+  .icons i{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  
+
+}
+
