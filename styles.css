@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
   }
   body {
     margin: 0;
@@ -83,10 +84,22 @@
   }
 
   .menu ul li{
-      margin-left: 25px;
+      /* margin-left: 25px; */
       font-size: 18px;
       letter-spacing: 2px;
+      margin-right:15px;
+      margin-left:15px;
   }
+
+  .menu ul li a{
+    padding: 5px 8px;
+  }
+
+ .menu ul li a:hover{
+    background-color: white!important;
+  }
+
+
 
   .logo{
     font-family: 'Lobster', cursive;
@@ -299,6 +312,10 @@ input{
 }
 
 @media (max-width:768px){
+
+  /* display side bar nav */
+  
+
   .menu{
     height: 62px;
   }  
@@ -306,10 +323,12 @@ input{
   .menu ul{
     display: none;
     
-  }
+  } 
 
   .menu i{
     display:block;
+    cursor: pointer;
+    /* margin-right: 20px; */
   }
 
   .hero-content{
@@ -376,6 +395,39 @@ h2{
 
 
 @media (max-width : 480px){
+  .menu ul{
+    background-color: rgb(44, 37, 37);
+    color: rgb(236, 187, 243);
+    position:absolute;
+    right:0;
+    top:137px;
+    height: 90vh;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition:transform 0.5s ease-in;
+    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-right:0;
+    padding-left:0;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin: 0!important;
+    display: flex;
+    z-index: 100;
+  }
+
+  .menu ul li{
+    text-align: center;
+  }
+
+  .nav-active{
+    transform: translateX(0%)!important;
+}
+
+
+
   .container{
     width: 90%;
   }
@@ -411,7 +463,6 @@ form{
   flex-direction: column;
   gap: 10px;
 }
-  
 
 }
 
